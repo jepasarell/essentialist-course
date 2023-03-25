@@ -4,4 +4,7 @@ describe("fizzbuzz", () => {
   it("returns a string", () => {
     expect(typeof fizzbuzz(3)).toBe("string");
   });
+  it('returns Fizz for 3', () => {
+    expect(fizzbuzz(3)).toEqual('Fizz');
+  });
 });
