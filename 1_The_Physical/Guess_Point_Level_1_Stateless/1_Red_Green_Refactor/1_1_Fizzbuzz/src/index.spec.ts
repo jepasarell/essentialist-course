@@ -22,4 +22,7 @@ describe("fizzbuzz", () => {
   it("returns 13 for 13", () => {
     expect(fizzbuzz(13)).toEqual("13");
   });
+  it("returns 7 for 7", () => {
+    expect(fizzbuzz(7)).toEqual("7");
+  });
 });

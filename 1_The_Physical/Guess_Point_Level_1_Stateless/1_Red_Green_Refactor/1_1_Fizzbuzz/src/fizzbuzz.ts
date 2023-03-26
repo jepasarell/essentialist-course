@@ -6,5 +6,5 @@ export default function fizzbuzz(number: number): string {
   if (number % 5 === 0) {
     result += "Buzz";
   }
-  return result || "13";
+  return result || String(number);
 }
