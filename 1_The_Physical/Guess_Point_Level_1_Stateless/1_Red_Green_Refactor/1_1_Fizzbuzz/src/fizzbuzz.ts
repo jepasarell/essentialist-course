@@ -1,5 +1,5 @@
 export default function fizzbuzz(number: number): string {
-  if (number === 3 || number === 9) {
+  if (number === 3 || number === 9 || number === 12) {
     return "Fizz";
   }
   if (number === 5) {
