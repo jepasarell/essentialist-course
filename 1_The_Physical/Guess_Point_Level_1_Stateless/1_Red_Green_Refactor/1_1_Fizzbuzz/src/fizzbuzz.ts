@@ -5,5 +5,8 @@ export default function fizzbuzz(number: number): string {
   if (number === 5) {
     return "Buzz";
   }
+  if (number === 15) {
+    return "FizzBuzz";
+  }
   return "";
 }
