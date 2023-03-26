@@ -25,4 +25,8 @@ describe("fizzbuzz", () => {
   it("returns 7 for 7", () => {
     expect(fizzbuzz(7)).toEqual("7");
   });
+  it("throws if input is higher than 100 or lower than 1", () => {
+    expect(() => fizzbuzz(0)).toThrow();
+    expect(() => fizzbuzz(101)).toThrow();
+  });
 });
