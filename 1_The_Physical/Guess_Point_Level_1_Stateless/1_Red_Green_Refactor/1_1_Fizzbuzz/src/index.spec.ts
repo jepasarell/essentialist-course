@@ -13,4 +13,7 @@ describe("fizzbuzz", () => {
   it('returns FizBuzz for 15', () => {
     expect(fizzbuzz(15)).toEqual('FizzBuzz');
   });
+  it('returns Fizz for 9', () => {
+    expect(fizzbuzz(9)).toEqual('Fizz');
+  });
 });
