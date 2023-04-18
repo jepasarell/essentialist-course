@@ -22,4 +22,8 @@ describe("palindrome checker", () => {
   it("should not care about case", () => {
     expect(palindromeChecker.check("Mom")).toBeTruthy();
   });
+
+  it("should know 'Was It A Rat I Saw' is a palindrome", () => {
+    expect(palindromeChecker.check("Was It A Rat I Saw")).toBeTruthy();
+  });
 });
