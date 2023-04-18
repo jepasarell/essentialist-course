@@ -1,5 +1,16 @@
 export default class PalindromeChecker {
+  private removeSpaces(string: string): string {
+    return string.replace(/ /g, "");
+  }
+  private reverseString(string: string): string {
+    return string.split("").reverse().join("");
+  }
+
   check(string: string): boolean {
-    return string.replace(/ /g, '').toLowerCase().split("").reverse().join("") === string.replace(/ /g, '').toLowerCase();
+    const reversedString = this.reverseString(string);
+    return (
+      this.removeSpaces(string).toLowerCase() ===
+      this.removeSpaces(reversedString).toLowerCase()
+    );
   }
 }
